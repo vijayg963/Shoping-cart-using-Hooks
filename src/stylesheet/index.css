@@ -1,0 +1,335 @@
+body {
+  background-color: rgb(223, 215, 215);
+  text-align: center;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+header {
+  padding: 10px;
+  color: white;
+  background-color: darkslategray;
+}
+
+.container {
+  padding: 50px;
+  display: flex;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px black;
+  height: 400px;
+  width: 220px;
+  margin: 20px;
+  display: inline-block;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+  height: 3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+img {
+  height: 320px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.item-img {
+  width: 220px;
+  height: 235px;
+  overflow: hidden;
+  position: relative;
+}
+
+.price-tag {
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding-right: 20px;
+}
+
+.price-tag strong {
+  font-size: 1.6rem;
+}
+
+button {
+  padding: 8px 1rem;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+}
+
+.Add-cart {
+  width: 100%;
+  color: white;
+  font-size: 1.1rem;
+  padding: 14px;
+  background-color: rgb(19, 17, 17);
+}
+
+.Add-cart:hover {
+  background-color: #eabf00;
+}
+
+.free-shiping {
+  position: absolute;
+  right: 0;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  padding: 4px 6px;
+}
+
+.justify-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aside {
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  height: 70vh;
+  margin-top: 20px;
+  max-width: 64px;
+  background-color: whitesmoke;
+  position: sticky;
+}
+
+.circle {
+  padding-top: 12px;
+  width: 50px;
+  height: 45px;
+  background-color: rgb(231, 202, 202);
+  margin: 10px;
+  font-weight: 600;
+  border-radius: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.circle:hover {
+  border: 1px solid salmon;
+}
+
+.countProduct {
+  margin-left: 100px;
+  margin-top: -32px;
+  border-bottom: 1px dashed;
+  display: inline;
+  float: left;
+  height: 28px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.active-size {
+  color: white;
+  box-sizing: border-box;
+  background-color: palevioletred;
+}
+
+.beg-logo {
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background-color: black;
+}
+
+.beg-logo img {
+  height: 60px;
+  width: 60%;
+  object-fit: contain;
+}
+
+.header img {
+  height: 60px;
+  width: 60%;
+  object-fit: contain;
+}
+
+.count {
+  box-sizing: border-box;
+  background-color: yellow;
+  height: 25px;
+  width: 25px;
+  padding: 3px 7px;
+  position: fixed;
+  top: 35px;
+  right: 0;
+  z-index: 999;
+}
+
+.addCart-box {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 500px;
+  height: 100vh;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.hidden {
+  display: none;
+}
+
+.close-button {
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  border-radius: 5px;
+  left: -52px;
+  padding: 5px;
+  background-color: black;
+}
+
+.cart-name {
+  color: rgb(199, 191, 191);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.count2 {
+  box-sizing: border-box;
+  margin-left: -60px;
+  padding: 3px 8px;
+  background-color: #eabf00;
+}
+
+.header {
+  padding: 2rem 8rem;
+  border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+.cart-view {
+  display: block;
+  box-sizing: border-box;
+  margin: 10px;
+  color: white;
+  padding: 1rem;
+  overflow-y: scroll;
+  height: 380px;
+}
+
+.cart-view span img {
+  font-size: 0;
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.cart-view span {
+  height: 120px;
+  width: 120px;
+  box-sizing: border-box;
+}
+
+.subtotal {
+  padding: 5px 2rem;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+}
+
+.selector {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  right: 10%;
+}
+
+.selector select {
+  width: 250px;
+  margin-top: -32px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  margin-left: 100px;
+}
+
+.beg-item-view {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.deletItem {
+  margin: -10px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.style-color {
+  padding: 0px;
+  margin: 5px;
+}
+
+.details {
+  box-sizing: border-box;
+  margin: 0 20px;
+  text-align: left;
+}
+
+.mrp {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #eabf00;
+}
+
+.btn {
+  cursor: pointer;
+  margin: 4px;
+  padding: 3px 5px;
+  background-color: black;
+}
+
+.price-quantity {
+  text-align: right;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total-bill {
+  width: 100%;
+  color: white;
+  margin: 5px;
+  background-color: rgb(17, 16, 16);
+  font-size: 1.2rem;
+  padding: 0.8rem 10rem;
+}
